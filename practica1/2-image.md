@@ -33,17 +33,7 @@ docker pull <nombre imagen>:<tag>
 
 Descargar la imagen **hello-world**
 
-C:\Docker>docker pull hello-world  
-Using default tag: latest  
-latest: Pulling from library/hello-world  
-c1ec31eb5944: Pull complete  
-Digest: sha256:266b191e926f65542fa8daaec01a192c4d292bff79426f47300a046e1bc576fd  
-Status: Downloaded newer image for hello-world:latest  
-docker.io/library/hello-world:latest  
-  
-What's Next?  
-  View a summary of image vulnerabilities and recommendations → docker scout quickview hello-world  
-
+docker pull hello-world
 
 **¿Qué es nginx**
 es un servidor web de código abierto que también puede funcionar como un servidor proxy inverso, balanceador de carga, y un caché HTTP. Desarrollado inicialmente por Igor Sysoev y lanzado en 2004, Nginx ha ganado popularidad por su alta performance, estabilidad, y bajo consumo de recursos
@@ -51,23 +41,8 @@ es un servidor web de código abierto que también puede funcionar como un servi
 
 Descargar la imagen  **nginx** en la versión **alpine**
   
-C:\Docker>docker pull nginx:alpine  
-alpine: Pulling from library/nginx  
-4abcf2066143: Pull complete  
-fc21a1d387f5: Pull complete  
-e6ef242c1570: Pull complete  
-13fcfbc94648: Pull complete  
-d4bca490e609: Pull complete  
-5406ed7b06d9: Pull complete  
-8a3742a9529d: Pull complete  
-0d0c16747d2c: Pull complete  
-Digest: sha256:516475cc129da42866742567714ddc681e5eed7b9ee0b9e9c015e464b4221a00  
-Status: Downloaded newer image for nginx:alpine  
-docker.io/library/nginx:alpine  
-  
-What's Next?  
-  View a summary of image vulnerabilities and recommendations → docker scout quickview nginx:alpine  
-  
+docker pull nginx:alpine  
+
 
 ### Listar imágenes
 
@@ -116,7 +91,7 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
-# COMPLETAR
+docker rmi hello-world:
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
