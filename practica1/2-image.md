@@ -50,7 +50,24 @@ es un servidor web de código abierto que también puede funcionar como un servi
 
 
 Descargar la imagen  **nginx** en la versión **alpine**
-# COMPLETAR
+
+C:\Docker>docker pull nginx:alpine
+alpine: Pulling from library/nginx
+4abcf2066143: Pull complete
+fc21a1d387f5: Pull complete
+e6ef242c1570: Pull complete
+13fcfbc94648: Pull complete
+d4bca490e609: Pull complete
+5406ed7b06d9: Pull complete
+8a3742a9529d: Pull complete
+0d0c16747d2c: Pull complete
+Digest: sha256:516475cc129da42866742567714ddc681e5eed7b9ee0b9e9c015e464b4221a00
+Status: Downloaded newer image for nginx:alpine
+docker.io/library/nginx:alpine
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview nginx:alpine
+
 
 ### Listar imágenes
 
