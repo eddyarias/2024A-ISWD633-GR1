@@ -4,7 +4,11 @@ Es un archivo único que contiene todos los programas, librerías, dependencias 
 
 
 ## ¿Cuál es la relación entre una imagen y un contenedor? 
-# COMPLETAR 
+**Creación:** Los contenedores se crean a partir de imágenes. Una imagen actúa como el plano (blueprint) que define qué se incluye en el contenedor.
+**Instancia:** Cada contenedor es una instancia separada de una imagen. Puedes tener múltiples contenedores corriendo simultáneamente a partir de la misma imagen.
+**Inmutabilidad vs. Mutabilidad:** Mientras que la imagen es inmutable y no cambia, los contenedores son mutables y pueden tener cambios durante su ejecución. Sin embargo, estos cambios no afectan la imagen original.
+**Aislamiento:** Los contenedores proporcionan un entorno aislado y replicable basado en la imagen. Esto garantiza que la aplicación se ejecute de manera consistente sin importar dónde se implemente el contenedor.
+**Portabilidad:** Las imágenes se pueden transferir entre diferentes entornos (como entre desarrolladores y servidores de producción), y se puede garantizar que los contenedores creados a partir de estas imágenes se comportarán de manera idéntica. 
 
 ![Imagen y contenedores](imagenes/imagenYcontenedores.JPG)
 ## Comandos para imágenes
