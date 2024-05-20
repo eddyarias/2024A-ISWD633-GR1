@@ -97,7 +97,9 @@ Inspeccionar la imagen hello-world
 
 
 **¿Con qué algoritmo se está generando el ID de la imagen**
-# COMPLETAR
+
+El ID que ves en el comando docker inspect hello-world es generado utilizando el algoritmo SHA-256. SHA-256 es una función hash criptográfica que produce un hash de 256 bits (32 bytes), normalmente representado como una cadena de 64 caracteres hexadecimales.
+
 
 ### Filtrar imágenes
 
