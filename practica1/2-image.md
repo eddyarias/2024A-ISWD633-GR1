@@ -35,7 +35,8 @@ Descargar la imagen **hello-world**
 # COMPLETAR
 
 **¿Qué es nginx**
-# COMPLETAR 
+es un servidor web de código abierto que también puede funcionar como un servidor proxy inverso, balanceador de carga, y un caché HTTP. Desarrollado inicialmente por Igor Sysoev y lanzado en 2004, Nginx ha ganado popularidad por su alta performance, estabilidad, y bajo consumo de recursos
+
 
 Descargar la imagen  **nginx** en la versión **alpine**
 # COMPLETAR
