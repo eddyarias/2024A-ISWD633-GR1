@@ -32,7 +32,18 @@ docker pull <nombre imagen>:<tag>
 ```
 
 Descargar la imagen **hello-world**
-# COMPLETAR
+
+C:\Docker>docker pull hello-world
+Using default tag: latest
+latest: Pulling from library/hello-world
+c1ec31eb5944: Pull complete
+Digest: sha256:266b191e926f65542fa8daaec01a192c4d292bff79426f47300a046e1bc576fd
+Status: Downloaded newer image for hello-world:latest
+docker.io/library/hello-world:latest
+
+What's Next?
+  View a summary of image vulnerabilities and recommendations → docker scout quickview hello-world
+
 
 **¿Qué es nginx**
 es un servidor web de código abierto que también puede funcionar como un servidor proxy inverso, balanceador de carga, y un caché HTTP. Desarrollado inicialmente por Igor Sysoev y lanzado en 2004, Nginx ha ganado popularidad por su alta performance, estabilidad, y bajo consumo de recursos
