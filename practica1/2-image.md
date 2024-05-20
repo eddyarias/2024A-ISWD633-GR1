@@ -41,9 +41,7 @@ es un servidor web de código abierto que también puede funcionar como un servi
 
 Descargar la imagen  **nginx** en la versión **alpine**
 
-```
-docker pull nginx:alpine  
-```
+```docker pull nginx:alpine```
 
 ### Listar imágenes
 
@@ -92,7 +90,7 @@ docker rmi <nombre imagen>:<tag>
 ```
 
 Eliminar la imagen hello-world 
-docker rmi hello-world:
+```docker rmi hello-world:```
 
 -f: Es la opción para forzar la eliminación de la imagen incluso si hay contenedores en ejecución que utilizan esa imagen.
 Cuando eliminas una imagen Docker, Docker no elimina automáticamente los contenedores que se han creado a partir de esa imagen. Esto significa que, aunque hayas eliminado la imagen, el contenedor seguirá ejecutándose normalmente.  
