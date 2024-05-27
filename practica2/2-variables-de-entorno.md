@@ -1,9 +1,8 @@
 # Variables de Entorno
 ### ¿Qué son las variables de entorno
-# COMPLETAR
-```
+
 Las variables de entorno son variables definidas en el entorno del sistema operativo que pueden afectar el comportamiento de los procesos que se ejecutan en ese entorno. Son una forma de pasar información al software y scripts sobre el entorno en el que se están ejecutando.
-```
+
 ### Para crear un contenedor con variables de entorno
 
 ```
@@ -12,21 +11,37 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 
 ### Crear un contenedor a partir de la imagen de nginx:alpine con las siguientes variables de entorno: username y role. Para la variable de entorno rol asignar el valor admin.
 
-# COMPLETAR
+```docker run -d --name nginx-container -e username=myuser -e role=admin nginx:alpine```
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
 
+![image](https://github.com/eddyarias/2024A-ISWD633-GR1/assets/94008713/c828515e-63a5-45a3-ae4f-9195d6736ece)
+
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
-# COMPLETAR
+
+```docker run -d --name mysql-container -P mysql:8```
+
 
 ### ¿El contenedor se está ejecutando?
-# COMPLETAR
+```docker ps -a```
 
 ### Identificar el problema
-# COMPLETAR
+
+```docker rm mysql-container```
+
+Si el contenedor de MySQL no se está ejecutando, puede haber varias razones. Aquí hay algunos pasos que puedes seguir para identificar el problema:
+
+Verificar el estado del contenedor: Utiliza el comando docker ps -a para verificar si el contenedor aparece en la lista y si está detenido o en ejecución.
+
+Revisar los registros del contenedor: Los registros pueden contener información sobre por qué el contenedor no se está ejecutando correctamente. Puedes ver los registros de un contenedor específico utilizando el comando docker logs <nombre_contenedor>.
+
+Verificar errores de creación del contenedor: Si el contenedor no se creó correctamente, puede haber errores en la salida del comando docker run. Revisa la salida del comando para detectar posibles errores.
+
+
 
 ### Eliminar el contenedor creado con mysql:8 
-# COMPLETAR
+```docker rm mysql-container```
+
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
