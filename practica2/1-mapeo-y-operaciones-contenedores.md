@@ -122,7 +122,12 @@ docker exec -it <nombre contenedor> <programa o comando>
 
 # COMPLETAR
 
+```docker exec -it jenkins-server cat /var/jenkins_home/secrets/initialAdminPassword```
+
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
+
+![image](https://github.com/eddyarias/2024A-ISWD633-GR1/assets/94008713/24b88c1d-6396-4642-b032-ad700270bb85)
+
 
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
