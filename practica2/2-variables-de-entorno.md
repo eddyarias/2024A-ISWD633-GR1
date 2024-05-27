@@ -58,9 +58,18 @@ docker run -d --name <nombre contenedor> --env-file=<nombreArchivo>.<extensión>
 Es necesario especificar la ruta absoluta del archivo si este se encuentra en una ubicación diferente a la que estás ejecutando el comando docker run.
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
-# COMPLETAR
+```docker run -d --name mysql-container1 --env-file=C:\Users\eddya\OneDrive\Documentos\holi.txt -P mysql:8```
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
+![image](https://github.com/eddyarias/2024A-ISWD633-GR1/assets/94008713/87ee2318-7003-460b-b066-28982c90c0d0)
+
 
 ### ¿Qué bases de datos existen en el contenedor creado?
-# COMPLETAR
+
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Database
+information_schema
+mydatabase
+mysql
+performance_schema
+sys
