@@ -36,6 +36,9 @@ Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 docker exec <nombre contenedor> <comando> <argumentos opcionales>
 ```
 # COMPLETAR
+
+```docker exec jenkins-server whoami```
+
 ### ¿Para qué se usa el comando ls?
 ### ¿Para qué sirve el argumento -l junto al comando ls?
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
