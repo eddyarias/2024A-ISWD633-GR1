@@ -41,8 +41,8 @@ docker run --name wordpress-container --network net-wp \
 
 ### Eliminar el contenedor y crearlo nuevamente, ¿qué ha sucedido?
 
-```
-Cuando eliminas el contenedor de WordPress y lo creas nuevamente utilizando el mismo volumen para /var/www/html, todas las personalizaciones de la apariencia y las entradas que agregaste previamente se conservan. ```
+
+Cuando eliminas el contenedor de WordPress y lo creas nuevamente utilizando el mismo volumen para /var/www/html, todas las personalizaciones de la apariencia y las entradas que agregaste previamente se conservan. 
 
 
 
