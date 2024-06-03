@@ -24,7 +24,7 @@ Al ingresar nuevamente al servidor de Nginx en http://localhost, verás el conte
 
 ### Eliminar el contenedor
 
-´´´docker rm -f primerContenedor´´´
+```docker rm -f primerContenedor```
 
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
