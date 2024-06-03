@@ -29,10 +29,14 @@ docker rm -f primerContenedor
 ```
 
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+Al crear nuevamente el mismo contenedor con el volumen de tipo host a los directorios definidos anteriormente, el contenedor montará el mismo directorio del host (/Users/LabP3E004/Documents/Docker) en la misma ruta del contenedor (/usr/share/nginx/html). Por lo tanto, verás el mismo contenido que hayas colocado en ese directorio del host cuando accedas al servidor Nginx. Esto significa que cualquier cambio realizado en los archivos del directorio del host se reflejará inmediatamente en el servidor Nginx, ya que los archivos están compartidos entre el host y el contenedor.
+
 
 ### ¿Qué hace el comando pwd?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+El comando pwd (print working directory) muestra la ruta completa del directorio de trabajo actual en la línea de comandos. Es útil para saber en qué directorio te encuentras actualmente al trabajar en la terminal. Por ejemplo, si estás en el directorio /home/user/projects, al ejecutar pwd, obtendrás /home/user/projects como salida.
+
 Si quieres incluir el comando pwd dentro de un comando de Docker, lo puedes hacer de diferentes maneras dependiendo del shell que estés utilizando.
 
 
