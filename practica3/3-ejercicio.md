@@ -22,11 +22,20 @@ Después de iniciar el contenedor MySQL, la carpeta db que estaba inicialmente v
 
 ### Para que persista la información es necesario conocer en dónde wordpress almacena la información.
 # COMPLETAR LA SIGUIENTE ORACIÓN. REVISAR LA DOCUMENTACIÓN DE LA IMAGEN EN https://hub.docker.com/)
-En el esquema del ejercicio la carpeta contenedor (b) es '''/var/www/html'''
+En el esquema del ejercicio la carpeta contenedor (b) es ```/var/www/html```
 Ruta carpeta host: .../ejercicio3/www
 
 ### Crear un contenedor con la imagen wordpress en la red net-wp, configurar las variables de entorno WORDPRESS_DB_HOST, WORDPRESS_DB_USER, WORDPRESS_DB_PASSWORD y WORDPRESS_DB_NAME (los valores de estas variables corresponden a los del contenedor creado previamente)
-# COMPLETAR CON EL COMANDO
+```
+docker run --name wordpress-container --network net-wp \
+  -e WORDPRESS_DB_HOST=mysql-container \
+  -e WORDPRESS_DB_USER=mi_usuario \
+  -e WORDPRESS_DB_PASSWORD=mi_contraseña \
+  -e WORDPRESS_DB_NAME=mi_base_de_datos \
+  -v /Users/LabP3E004/Documents/ejercicio3/www:/var/www/html \
+  -p 8080:80 \
+  -d wordpress:latest
+```
 
 ### Personalizar la apariencia de wordpress y agregar una entrada
 
