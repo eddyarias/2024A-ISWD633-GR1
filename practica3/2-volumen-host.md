@@ -10,10 +10,12 @@ docker run -d --name <nombre contenedor> -v <ruta carpeta host>:<ruta carpeta co
 # COMPLETAR CON EL COMANDO
 
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+Al ingresar al servidor de Nginx en http://localhost, verás el contenido del directorio /usr/share/nginx/html del contenedor, que estará sincronizado con el directorio especificado en tu host (/Users/LabP3E004/Documents/Docker). Esto significa que cualquier archivo que esté en esa carpeta de tu host será servido por el servidor Nginx.
 
 ### ¿Qué pasa con el archivo index.html del contenedor?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+El archivo index.html original del contenedor de Nginx será reemplazado por el archivo index.html presente en el directorio montado desde tu host. Si no hay un index.html en el directorio de tu host, entonces cuando intentes acceder a http://localhost, verás un error 403 Forbidden o un listado del directorio si la configuración de Nginx lo permite.
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de nginx/html
 ### ¿Qué sucede al ingresar al servidor de nginx?
