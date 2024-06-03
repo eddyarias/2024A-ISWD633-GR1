@@ -6,7 +6,7 @@
 
 ### Para que persista la información es necesario conocer en dónde mysql almacena la información.
 # COMPLETAR LA SIGUIENTE ORACIÓN. REVISAR LA DOCUMENTACIÓN DE LA IMAGEN EN https://hub.docker.com/)
-En el esquema del ejercicio la carpeta contenedor (a) es '''/var/lib/mysql'''
+En el esquema del ejercicio la carpeta contenedor (a) es ```/var/lib/mysql```
 Ruta carpeta host: .../ejercicio3/db
 
 ### ¿Qué contiene la carpeta db del host?
@@ -14,8 +14,7 @@ Ruta carpeta host: .../ejercicio3/db
 Inicialmente, la carpeta db del host está vacía. Una vez que el contenedor de MySQL esté en ejecución y almacene datos, esta carpeta contendrá los archivos de datos de MySQL, como las tablas y bases de datos.
 
 ### Crear un contenedor con la imagen mysql:8  en la red net-wp, configurar las variables de entorno: MYSQL_ROOT_PASSWORD, MYSQL_DATABASE, MYSQL_USER y MYSQL_PASSWORD
-```docker run --name mysql-container --network net-wp -e MYSQL_ROOT_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=mi_base_de_datos -e MYSQL_USER=user -e MYSQL_PASSWORD=P@ssw0rd -v /ruta/absoluta/a/tu/db:/var/lib/mysql -d mysql:8
-```
+```docker run --name mysql-container --network net-wp -e MYSQL_ROOT_PASSWORD=P@ssw0rd -e MYSQL_DATABASE=mi_base_de_datos -e MYSQL_USER=user -e MYSQL_PASSWORD=P@ssw0rd -v /ruta/absoluta/a/tu/db:/var/lib/mysql -d mysql:8```
 
 ### ¿Qué observa en la carpeta db que se encontraba inicialmente vacía?
 
