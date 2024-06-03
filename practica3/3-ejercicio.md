@@ -29,8 +29,8 @@ Ruta carpeta host: .../ejercicio3/www
 ```
 docker run --name wordpress-container --network net-wp \
   -e WORDPRESS_DB_HOST=mysql-container \
-  -e WORDPRESS_DB_USER=mi_usuario \
-  -e WORDPRESS_DB_PASSWORD=mi_contraseña \
+  -e WORDPRESS_DB_USER=user \
+  -e WORDPRESS_DB_PASSWORD=P@ssw0rd \
   -e WORDPRESS_DB_NAME=mi_base_de_datos \
   -v /Users/LabP3E004/Documents/ejercicio3/www:/var/www/html \
   -p 8080:80 \
@@ -41,7 +41,8 @@ docker run --name wordpress-container --network net-wp \
 
 ### Eliminar el contenedor y crearlo nuevamente, ¿qué ha sucedido?
 
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+```
+Cuando eliminas el contenedor de WordPress y lo creas nuevamente utilizando el mismo volumen para /var/www/html, todas las personalizaciones de la apariencia y las entradas que agregaste previamente se conservan. ```
 
 
 
