@@ -19,10 +19,12 @@ El archivo index.html original del contenedor de Nginx será reemplazado por el 
 
 ### Ir a https://html5up.net/ y descargar un template gratuito, descomprirlo dentro de nginx/html
 ### ¿Qué sucede al ingresar al servidor de nginx?
-# COMPLETAR CON LA RESPUESTA A LA PREGUNTA
+
+Al ingresar nuevamente al servidor de Nginx en http://localhost, verás el contenido del template que descargaste y descomprimiste en el directorio /Users/LabP3E004/Documents/Docker. El servidor Nginx servirá estos archivos, por lo que verás la página del template en tu navegador.
 
 ### Eliminar el contenedor
-# COMPLETAR CON EL COMANDO
+
+'''docker rm -f primerContenedor'''
 
 ### ¿Qué sucede al crear nuevamente el mismo contenedor con volumen de tipo host a los directorios definidos anteriormente?
 # COMPLETAR CON LA RESPUESTA A LA PREGUNTA
